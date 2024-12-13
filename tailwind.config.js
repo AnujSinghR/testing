@@ -16,22 +16,11 @@ module.exports = {
 
     screens: {
       xs: "450px",
-      // => @media (min-width: 450px) { ... }
-
       sm: "575px",
-      // => @media (min-width: 576px) { ... }
-
       md: "768px",
-      // => @media (min-width: 768px) { ... }
-
       lg: "992px",
-      // => @media (min-width: 992px) { ... }
-
       xl: "1200px",
-      // => @media (min-width: 1200px) { ... }
-
       "2xl": "1400px",
-      // => @media (min-width: 1400px) { ... }
     },
     extend: {
       colors: {
@@ -56,8 +45,25 @@ module.exports = {
           dark: "#1E232E",
           light: "#F0F2F9",
         },
+        deepAstrenBlue: '#003366',
+        astrenTealGradient: 'linear-gradient(to bottom right, #003366, #007575)',
+        pureWhite: '#FFFFFF',
+        vibrantLimeGreen: '#B6FF00',
+        lightGray: '#F4F4F4',
+        steelGray: '#808080',
+        midnightBlue: '#001F3F',
       },
 
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+      },
+      fontSize: {
+        h1: ['52px', '1.2'],
+        h2: ['36px', '1.3'],
+        body: ['16px', '1.6'],
+        button: ['18px', '1.2'],
+      },
       boxShadow: {
         signUp: "0px 5px 10px rgba(4, 10, 34, 0.2)",
         one: "0px 2px 3px rgba(7, 7, 77, 0.05)",
@@ -71,9 +77,25 @@ module.exports = {
         btn: "0px 1px 2px rgba(4, 10, 34, 0.15)",
         "btn-hover": "0px 1px 2px rgba(0, 0, 0, 0.15)",
         "btn-light": "0px 1px 2px rgba(0, 0, 0, 0.1)",
+        tealBorder: '0 0 10px rgba(0, 200, 200, 0.5)',
+        cardShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
       },
       dropShadow: {
         three: "0px 5px 15px rgba(6, 8, 15, 0.05)",
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+        ripple: {
+          '0%': { transform: 'scale(0)' },
+          '100%': { transform: 'scale(4)', opacity: 0 },
+        },
+      },
+      animation: {
+        fadeIn: 'fadeIn 0.5s ease-in-out',
+        ripple: 'ripple 0.6s ease-out',
       },
     },
   },
